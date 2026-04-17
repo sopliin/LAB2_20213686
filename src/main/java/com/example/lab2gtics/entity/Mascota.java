@@ -14,10 +14,12 @@ public class Mascota {
     private String nombre;
     @Column(name = "especie")
     private String especie;
+    @Column(name = "raza")
+    private String raza;
     @Column(name = "edad")
     private Integer edad;
     @Column(name = "nombre_dueno")
-    private Integer nombreDueno;
+    private String nombreDueno;
     @Column(name = "telefono")
     private String telefono;
     @Column(name = "estado")
@@ -47,6 +49,14 @@ public class Mascota {
         this.especie = especie;
     }
 
+    public String getRaza() {
+        return raza;
+    }
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
     public Integer getEdad() {
         return edad;
     }
@@ -55,11 +65,11 @@ public class Mascota {
         this.edad = edad;
     }
 
-    public Integer getNombreDueno() {
+    public String getNombreDueno() {
         return nombreDueno;
     }
 
-    public void setNombreDueno(Integer nombreDueno) {
+    public void setNombreDueno(String nombreDueno) {
         this.nombreDueno = nombreDueno;
     }
 
